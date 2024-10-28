@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Results</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background: #f4f4f4;
+      border-bottom: 2px solid #e4e4e4;
+    }
+    header h1 {
+      margin: 0;
+    }
+    header nav {
+      display: flex;
+    }
+    header nav a {
+      margin-left: 20px;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    header nav a:hover {
+      color: #77aaff;
+    }
+    section {
+      margin-bottom: 20px;
+    }
+    section h2 {
+      color: #333;
+      border-bottom: #77aaff 3px solid;
+      padding-bottom: 10px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+    .audio-row {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+    .audio-cell {
+      flex: 1;
+      text-align: center;
+    }
+    /* 新增样式：将音频标签标题的样式与表格标题一致 */
+    .audio-cell p {
+      font-weight: bold;
+      color: #333;
+      font-size: 16px;
+      margin: 0;
+      padding: 10px;
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+    }
+    .section-divider {
+      border-top: 2px solid #ddd;
+      margin: 20px 0;
+    }
+    .sample-label {
+      font-weight: bold;
+      color: #333;
+      margin-right: 10px;
+      align-self: center;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Results</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="#results">Results</a>
+  </nav>
+</header>
+<section id="results">
+  <h2>Audio Samples</h2>
+
+  <h3>Throat Sensor Signals → Microphone Speech</h3>
+  <table>
+    <tr>
+      <th>Sample</th>
+      <th>Throat Sensor</th>
+      <th>Microphone Speech</th>
+      <th>Microphone with Mask</th>
+      <th>Generated Speech</th>
+      <th>Enhanced Audio</th>
+    </tr>
+    <tr>
+      <td>Sample 1 (Absolutely)</td>
+      <td><audio controls><source src="/Audio/Absolutely_TS.wav" type="audio/mpeg">Your browser does not support the audio element.</audio></td>
+      <td><audio controls><source src="/Audio/Absolutely_Microphone_NM.wav" type="audio/mpeg">Your browser does not support the audio element.</audio></td>
+      <td><audio controls><source src="/Audio/Absolutely_Microphone_WM.wav" type="audio/mpeg">Your browser does not support the audio element.</audio></td>
+      <td><audio controls><source src="/Audio/Absolutely_Generated.wav" type="audio/mpeg">Your browser does not support the audio element.</audio></td>
+      <td><audio controls><source src="/Audio/Absolutely_Enhanced.wav" type="audio/mpeg">Your browser does not support the audio element.</audio></td>
+    </tr>
+    <tr>
+      <td>Sample 2 (Celebrate)</td>
+      <td><audio controls><source src="/Audio/Celebrate_TS.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls><source src="/Audio/Celebrate_Microphone_NM.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls><source src="/Audio/Celebrate_Microphone_WM.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls><source src="/Audio/Celebrate_Generated.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls><source src="/Audio/Celebrate_Enhanced.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+    </tr>
+    <tr>
+      <td>Sample 3 (University)</td>
+      <td><audio controls><source src="/Audio/University_TS.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls><source src="/Audio/University_Microphone_NM.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls><source src="/Audio/University_Microphone_WM.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls><source src="/Audio/University_Generated.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+      <td><audio controls><source src="/Audio/University_Enhanced.wav" type="audio/wav">Your browser does not support the audio element.</audio></td>
+    </tr>
+  </table>
+  <div class="section-divider"></div>
+
+  <h3>Throat Signal Collection and Speech Reconstruction at Different Positions (Word Sample: Flower)</h3>
+  <div class="audio-row">
+    <div class="audio-cell">
+      <p>Throat Sensor-Left Jaw</p>
+      <audio controls><source src="/Audio/Left_Jaw_TS.wav" type="audio/wav">Your browser does not support the audio element.</audio>
+    </div>
+    <div class="audio-cell">
+      <p>Generated Audio (Left Jaw)</p>
+      <audio controls><source src="/Audio/Left_Jaw_GS.wav" type="audio/wav">Your browser does not support the audio element.</audio>
+    </div>
+    <div class="audio-cell">
+      <p>Throat Sensor-Right Jaw</p>
+      <audio controls><source src="/Audio/Right_Jaw_TS.wav" type="audio/wav">Your browser does not support the audio element.</audio>
+    </div>
+    <div class="audio-cell">
+      <p>Generated Audio (Right Jaw)</p>
+      <audio controls><source src="/Audio/Right_Jaw_GS.wav" type="audio/wav">Your browser does not support the audio element.</audio>
+    </div>
+  </div>
+  <div class="audio-row">
+    <div class="audio-cell">
+      <p>Throat Sensor-Left Neck</p>
+      <audio controls><source src="/Audio/Left_Neck_TS.wav" type="audio/wav">Your browser does not support the audio element.</audio>
+    </div>
+    <div class="audio-cell">
+      <p>Generated Audio (Left Neck)</p>
+      <audio controls><source src="/Audio/Left_Neck_GS.wav" type="audio/wav">Your browser does not support the audio element.</audio>
+    </div>
+    <div class="audio-cell">
+      <p>Throat Sensor-Right Neck</p>
+      <audio controls><source src="/Audio/Right_Neck_TS.wav" type="audio/wav">Your browser does not support the audio element.</audio>
+    </div>
+    <div class="audio-cell">
+      <p>Generated Audio (Right Neck)</p>
+      <audio controls><source src="/Audio/Right_Neck_GS.wav" type="audio/wav">Your browser does not support the audio element.</audio>
+    </div>
+  </div>
+  <div class="section-divider"></div>
+
+  <h3>Throat Signal Collection and Speech Reconstruction in Different Noise Environments</h3>
+  <div class="audio-row">
+    <span class="sample-label">Sample 1 (Approch)</span>
+    <div class="audio-cell">
+      <p>City Noise - Throat Sensor</p>
+      <audio controls><source src="/Audio/City_Noise_TS.wav" type="audio/wav">Your browser does not support the audio element.</audio>
+    </div>
+    <div class="audio-cell">
+      <p>City Noise - Generated Audio</p>
+      <audio controls><source src="/Audio/City_Noise_GS.wav" type="audio/wav">Your browser does not support the audio element.</audio>
+    </div>
+    <div class="audio-cell">
+      <p>City Noise - Microphone</p>
+      <audio controls><source src="/Audio/City_Noise_MS.wav" type="audio/wav">Your browser does not support the audio element.</audio>
+    </div>
+  </div>
+  <div class="audio-row">
+    <span class="sample-label">Sample 2 (Approch)</span>
+    <div class="audio-cell">
+      <p>Indoor Noise - Throat Sensor</p>
+      <audio controls><source src="/Audio/Indoor_Noise_TS.wav" type="audio/wav">Your browser does not support the audio element.</audio>
+    </div>
+    <div class="audio-cell">
+      <p>Indoor Noise - Generated Audio</p>
+      <audio controls><source src="/Audio/Indoor_Noise_GS.wav" type="audio/wav">Your browser does not support the audio element.</audio>
+    </div>
+    <div class="audio-cell">
+      <p>Indoor Noise - Microphone</p>
+      <audio controls><source src="/Audio/Indoor_Noise_MS.wav" type="audio/wav">Your browser does not support the audio element.</audio>
+    </div>
+  </div>
+  <div class="audio-row">
+    <span class="sample-label">Sample 3 (Approch)</span>
+    <div class="audio-cell">
+      <p>Music Noise - Throat Sensor</p>
+      <audio controls><source src="/Audio/Music_Noise_TS.wav" type="audio/wav">Your browser does not support the audio element.</audio>
+    </div>
+    <div class="audio-cell">
+      <p>Music Noise - Generated Audio</p>
+      <audio controls><source src="/Audio/Music_Noise_GS.wav" type="audio/wav">Your browser does not support the audio element.</audio>
+    </div>
+    <div class="audio-cell">
+      <p>Music Noise - Microphone</p>
+      <audio controls><source src="/Audio/Music_Noise_MS.wav" type="audio/wav">Your browser does not support the audio element.</audio>
+    </div>
+  </div>
+  <div class="section-divider"></div>
+</section>
+</body>
+</html>
